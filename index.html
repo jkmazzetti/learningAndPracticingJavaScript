@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script type="text/javascript" scr="variables.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Script</title>
 </head>
+<script>
+
+    function add7(oneNumber) {
+        console.log(oneNumber + 7);
+        return oneNumber + 7;
+    }
+    add7(14);
+    
+    function multiply(firstNumber, secondNumber) {
+        console.log(firstNumber * secondNumber);
+        return (firstNumber * secondNumber);
+    }
+    multiply(6, 5);
+
+    function capitalize(oneString) {
+        let newString = oneString.toUpperCase()[0];
+        newString += oneString.toLowerCase().slice(1, oneString.length);
+        console.log(newString);
+        return newString;
+    }
+    capitalize("hello World!");
+
+    function lastLetter(oneString) {
+        console.log(oneString[oneString.length - 1]);
+        return oneString[oneString.length - 1];
+    }
+    lastLetter("JavaScript");
+
+</script>
+
 <body>
-    <script>
-        console.log("Hello world!");
-    </script>
 </body>
+
 </html>
